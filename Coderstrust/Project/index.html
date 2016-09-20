@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lange="en">
+<head>
+<meta charset="utf-8" />
+	<title>Intro to HTML and CSS</title>
+	<style>
+		body {
+			background: #CBBB9B;
+			margin: 0;
+			padding: 0;
+			font-family: "Helvetica","Arial";
+		}
+		#wrapper {
+			width: 960px;
+			height: auto;
+			background: #DAD5C1;
+			border-left: 5px solid #A09885;
+			border-right: 5px solid #A09885;
+			overflow: auto;
+			margin: 0 auto;
+			padding: 10px;
+
+			}
+		#header {
+			width: 100%;
+			height: 100px;
+			border-bottom: 3px solid #7C7063;
+		}
+
+		#logo {
+			float: left;
+			margin: 15px 0px 0px 80px;
+		}
+
+		#social {
+			float: right;
+			margin: 20px 30px 0px 0px;
+		}
+
+		#social ul li {
+			float: left;
+			list-style: none;
+			padding-right: 5px;
+		}
+
+		#social img {
+			height: 55px;
+			width: 55px;
+		}
+
+		#sidebar {
+			float: left;
+			width: 275px;
+			height: 100%;
+		}
+
+		#menu ul {
+			float: left;
+			height: auto;
+			width: 200px;
+		}
+
+		#menu ul li {
+			list-style: none;
+			padding: 5px;
+			text-align: center;
+		}
+
+		#menu ul li a {
+			background: #CBBB9B;
+			color: #4E4F3E;
+			text-decoration: none;
+			padding: 10px 0px;
+			display: block;
+		}
+
+		#menu ul li a:hover {
+			color: #fff;
+		}
+
+		#content {
+			float: left;
+			width: 655px;
+			height: 100%;
+			padding-left: 15px;
+			letter-spacing: 1;
+			color: #57574C;
+			border-left: 3px solid #7C7063;
+		}
+
+		h1 {
+			text-align: center;
+			padding: 5px;
+			border-bottom: 1px solid #7C7063;
+		}
+
+		p {
+			text-indent: 50px;
+			line-height: 25px;
+		}
+
+		img {
+			float: right;
+			padding: 0px 0px 5px 5px;
+		}
+
+		.top a{
+			color: #4E4F3E;
+		}
+
+		table {
+			margin: 0px 0px 30px 175px;
+		}
+
+		iframe {
+			margin-left: 55px;
+		}
+
+		#footer {
+			clear: both;
+			width: 100%;
+			height: 80px;
+			color: #7C7063;
+			border-top: 3px solid #7C7063;
+		} 
+
+		h5 {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="header">
+		<a name="top"></a>
+		<div id="logo">
+			<img src="http://www.w3newbie.com/wp-content/uploads/boxer_logo.png" width="350px" height="80px" alt="Logo" title="boxer dogs" />
+		</div> <!--End of Logo-->
+		
+		<div id="social">
+			<ul>
+				<li><a href="http://www.facebook.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" alt="facebook" title="facebook"/></a></li>
+				<li><a href="http://www.twitter.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/twitter.png" alt="twitter" title="twitter"/></a></li>
+				<li><a href="http://www.youtube.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="youtube" title="youtube"/></a></li>
+				<li><a href="http://www.plus.google.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/google_plus.png" alt="google plus" title="google plus"/></a></li>
+				<li><a href="http://www.w3newbie.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/w3_icon.png" alt="w3newbie" title="w3newbie"/></a></li>
+			</ul>
+		</div> <!--End of Social-->
+		
+	</div> <!--End of Header-->
+	<div id="sidebar">
+		<div id="menu">
+			<ul>
+				<li><h2><a href="#intro">Intro</a></h2></li>
+				<li><h2><a href="#size">Size</a></h2></li>
+				<li><h2><a href="#play">Play</a></h2></li>
+				<li><h2><a href="#food">Food</a></h2></li>
+			</ul>
+		</div> <!--End of Menu-->
+	</div> <!--End of Sidebar-->
+	<div id="content">
+		<a name="intro"><h1>My Boxer Dog</h1>
+			<img src="http://www.w3newbie.com/wp-content/uploads/boxer1.png" width="400" height="250" alt="Boxer Dog" title="Boxer Dog" />
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<a name="size"><h1>Size</h1>
+			<img src="http://www.w3newbie.com/wp-content/uploads/boxer2.png" width="350" height="200" alt="Boxer Dog" title="Boxer Dog" />
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<div class="top"><a href="#top"><h4>Go To The Top!</a></h4></div>
+
+			<a name="play"><h1>Play</h1>
+			<img src="http://www.w3newbie.com/wp-content/uploads/boxer3.png" width="430" height="260" alt="Boxer Dog" title="Boxer Dog" />
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<div class="top"><a href="#top"><h4>Go To The Top!</a></h4></div>
+
+			<a name="food"><h1>Food</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<div id="table">
+				<table border="1">
+					<tr>
+						<th>--------</th>
+						<th>Meal 1</th>
+						<th>Meal 2</th>
+						<th>Meal 3</th>
+					</tr>
+
+					<tr>
+						<th>Food</th>
+						<th>Wet</th>
+						<th>Dry</th>
+						<th>Bacon</th>
+					</tr>
+
+					<tr>
+						<th>Amount</th>
+						<th>5 oz</th>
+						<th>9lbs</th>
+						<th>334</th>
+					</tr>
+				</table>
+			</div> <!-- End of Table-->
+
+			<iframe width="560" height="315" src="https://youtube.com/embed/eQQi7eZEje4" frameborder="0" allowfullscreen></iframe>
+
+			<div class="top"><a href="#top"><h4>Go To The Top!</a></h4></div>
+
+	</div> <!--End of Content-->
+
+	<div id="footer">
+		<h5>2016 Boxer Dog Website!</br><a href="mailto:sharulizad@ymail.com? subject=Boxer Dogs">Send me an email</a></h5>
+	</div> <!--End of Footer-->
+
+</div> <!--End of Wrapper-->
+
+</body>
+</html>
