@@ -32,7 +32,9 @@ div {
 	display: inline-block;
 	color: #fff;
 	text-align: center;
-	ration: none;
+}
+#header ul li a {
+	text-decoration: none;
 }
 a:hover {
 	background: #000;
