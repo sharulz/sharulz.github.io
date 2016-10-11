@@ -112,6 +112,7 @@ a:visited {
 	background-color: #e60106;
 	text-align: center;
 	position: relative;
+	box-shadow: 5px 5px;
 }
 #hidden .box .number {
 	position: absolute;
@@ -126,20 +127,34 @@ a:visited {
 	bottom: -9px;
 	left: -8px;
 }
-#quiz{
+#member{
 	border-radius: 30px;
 	border: 2px solid black;
 	z-index: 1;
-	width: 200px;
+	width: 250px;
 	height: 30px;
 	background-color: #fff;
 	position: absolute;
 	top: -10px;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
+	left: 100px;
 	text-align: center;
+}
+#quiz{
+	border-radius: 30px;
+	border: 2px solid black;
+	z-index: 1;
+	width: 180px;
+	height: 30px;
+	background-color: #fff;
+	position: absolute;
+	top: -10px;
+	right: 160px;
+	text-align: center;
+}
+#member p{
+	font-size: 22px;
+	font-weight: bold;
+	color: #000;
 }
 #quiz p {
 	font-size: 22px;
@@ -149,23 +164,48 @@ a:visited {
 #forms {
 display: inline-block;
 width: 960px;
-height: 270px;
+height: 420px;
 margin: 15px auto;
 position: relative;
 }
-input {
-	width: 90%;
+input[type=text], textarea {
+	margin: 5px;
+	padding: 5px 10px;
+	width: 100%;
+	font-weight: bold;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	font-size: 14px;
 }
 .form {
 color: #fff;
 padding: 15px;
 display: inline-block;
 width: 465px;
-height: 270px;
+height: 420px;
 margin: 5px;
 border-radius: 5px;
 background-color: #e60106;
 vertical-align: top;
+}
+textarea {
+	height: 150px;
+	resize: none;
+}
+input[type=submit] {
+	width: 30%;
+	background-color: #a70505;
+	color: #fff;
+	padding: 14px 20px;
+	margin: 5px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+input[type=submit]:hover {
+	background-color: #6f0d0d;
 }
 #footer {
 width: 960px;
