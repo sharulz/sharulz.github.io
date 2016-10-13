@@ -151,6 +151,9 @@ a:visited {
 	right: 160px;
 	text-align: center;
 }
+#quiz:hover {
+	transform: rotateX(150deg);
+}
 #member p{
 	font-size: 22px;
 	font-weight: bold;
@@ -185,7 +188,7 @@ padding: 15px;
 display: inline-block;
 width: 465px;
 height: 420px;
-margin: 5px;
+margin: 10px 5px;
 border-radius: 5px;
 background-color: #e60106;
 vertical-align: top;
@@ -203,9 +206,25 @@ input[type=submit] {
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
+	transition: width 2s;
 }
 input[type=submit]:hover {
 	background-color: #6f0d0d;
+	width: 50%;
+}
+input[list=players] {
+	margin: 5px;
+	padding: 5px 10px;
+	font-weight: bold;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	font-size: 14px;
+}
+input[type=checkbox] {
+	margin: 5px;
+	padding: 5px;
 }
 #footer {
 width: 960px;
