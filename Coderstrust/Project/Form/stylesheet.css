@@ -61,27 +61,29 @@ a:visited {
 	border-radius: 5px;
 	margin: 10px 5px 0px 0px;
 	background-color: #e60106;
-	padding: 15px;
 	vertical-align: top;
 }
 #left h2 {
 	color: #fff;
-	text-align: center;
-}
-#left p {
-	padding: 5px;
-	text-align: center;
 }
 #left ul {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 220px;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
 }
 #left ul li a {
 	text-decoration: none;
 	display: block;
+	border-radius: 5px;
+	border: 1px solid #000;
+	text-align: center;
 	color: #fff;
+	padding: 15px;
+	background-color: #a70505;
+}
+#left ul li a:hover {
+	width: 90%;
 }
 #main {
 	display: inline-block;
@@ -112,7 +114,6 @@ a:visited {
 	background-color: #e60106;
 	text-align: center;
 	position: relative;
-	box-shadow: 5px 5px;
 }
 #hidden .box .number {
 	position: absolute;
@@ -150,9 +151,6 @@ a:visited {
 	top: -10px;
 	right: 160px;
 	text-align: center;
-}
-#quiz:hover {
-	transform: rotateX(150deg);
 }
 #member p{
 	font-size: 22px;
@@ -233,4 +231,13 @@ border: 1px solid black;
 margin: 10px 0px 10px 0px;
 border-radius: 5px;
 background-color: #e60106;
+padding: 15px;
+}
+.badge {
+	position: relative;
+	
+}
+@keyframes evolution {
+    0%   {background-image: url("http://kassiesa.net/uefa/clubs/images/Arsenal@2.-old-logo.png" width="80" height="80"); left:0px; top:0px;}
+    100%  {background-image: url("http://icons.iconseeker.com/png/fullsize/soccer-teams/arsenal-fc-logo.png" width="80" height="80"); left:200px; top:0px;
 }
