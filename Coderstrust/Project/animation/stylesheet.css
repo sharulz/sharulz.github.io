@@ -1,0 +1,277 @@
+* {
+	margin: 0;
+	font-family: Marcellus;
+}
+section {
+	margin: auto;
+	width: 1000px;
+}
+div {
+	box-sizing: border-box;
+}
+#header {
+	display: inline-block;
+	width: 960px;
+	height: 120px;
+	border: 1px solid black;
+	margin: 60px auto auto;
+	border-radius: 5px;
+	background-color: #e60106;
+	position: relative;
+}
+#header img {
+	width: 120px;
+	height: 140px;
+	position: absolute;
+	top: -35px;
+	left: 0px;
+	animation-name: animate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate {
+    0%   {left:0px; top:-35px;}
+    25%  {left:30px; top:-50px;}
+    50%  {left:60px; top:-35px;}
+    75%  {left:30px; top:0px;}
+    100% {left:0px; top:-35px;}
+}
+#header div {
+	display: inline-block;
+	margin: 85px 0px 0px 380px;;
+	vertical-align: top;
+
+}
+#header ul li {
+	border-left: 1px dotted black;
+	width: 170px;
+	height: 20px;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	}
+#header ul li a {
+	text-decoration: none;
+}
+a:hover {
+	background-color: #000;
+}
+a:visited {
+	color: #fff;
+}
+#left {
+	display: inline-block;
+	width: 240px;
+	height: 1000px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 10px 5px 0px 0px;
+	background-color: #e60106;
+	vertical-align: top;
+}
+#left h2 {
+	color: #fff;
+}
+#left ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+#left ul li a {
+	text-decoration: none;
+	display: block;
+	border-radius: 5px;
+	border: 1px solid #000;
+	text-align: center;
+	color: #fff;
+	padding: 15px;
+	background-color: #a70505;
+}
+#left ul li a:hover {
+	width: 90%;
+}
+#main {
+	display: inline-block;
+	width: 710px;
+	height: 1000px;
+	border: 1px solid black;
+	margin: 10px 0px 0px 5px;
+	border-radius: 5px;
+	background-color: #e60106;
+	color:#fff;
+	padding: 5px;
+}
+#columns {
+	width: 960px;
+	column-count: 3;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #e60106;
+	color: #fff;
+}
+#columns img {
+	max-width: 100%;
+    height: auto;
+}
+#hidden {
+	display: inline-block;
+	width: 960px;
+	height: 270px;
+	margin: 10px auto;
+	text-align: center;
+}
+#hidden p {
+	color: #fff;
+}
+#hidden .box {
+	display: inline-block;
+	width: 220px;
+	height: 230px;
+	margin: 8px;
+	border-radius: 5px;
+	background-color: #e60106;
+	text-align: center;
+	position: relative;
+	transition: 1s;
+}
+#hidden .box:hover {
+	transform: rotate(10deg);
+}
+#hidden .box .number {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+}
+#hidden .box .number img {
+	border-radius: 100%;
+}
+#hidden .box .logo {
+	position: absolute;
+	bottom: -9px;
+	left: -8px;
+}
+#video {
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000000;
+	width: 960px;
+	margin: 5px;
+	padding: 5px;
+	background-image: url("http://www.arsenal.com/assets/_files/scaled/1000x688/may_14/zp_Celebrations001_6978.jpg");
+	background-size: 960px;
+	background-position: left, right;
+    background-repeat: no-repeat, no-repeat;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+#member{
+	border-radius: 30px;
+	border: 2px solid black;
+	box-shadow: 2px 2px #000;
+	z-index: 1;
+	width: 250px;
+	height: 30px;
+	background-color: #fff;
+	position: absolute;
+	top: -10px;
+	left: 110px;
+	text-align: center;
+}
+#quiz{
+	border-radius: 30px;
+	border: 2px solid black;
+	box-shadow: 2px 2px #000;
+	z-index: 1;
+	width: 180px;
+	height: 30px;
+	background-color: #fff;
+	position: absolute;
+	top: -10px;
+	right: 160px;
+	text-align: center;
+}
+#member p{
+	font-size: 22px;
+	font-weight: bold;
+	color: #000;
+}
+#quiz p {
+	font-size: 22px;
+	font-weight: bold;
+	color: #000;
+}
+#forms {
+display: inline-block;
+width: 960px;
+height: 420px;
+margin: 15px auto;
+position: relative;
+text-align: center;
+}
+input[type=text], textarea {
+	margin: 5px;
+	padding: 5px 10px;
+	width: 100%;
+	font-weight: bold;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	font-size: 14px;
+}
+.form {
+color: #fff;
+padding: 15px;
+display: inline-block;
+width: 465px;
+height: 420px;
+margin: 10px 5px;
+border-radius: 5px;
+background-color: #e60106;
+vertical-align: top;
+}
+textarea {
+	height: 150px;
+	resize: none;
+}
+input[type=submit] {
+	width: 30%;
+	background-color: #a70505;
+	color: #fff;
+	padding: 14px 20px;
+	margin: 5px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: width 2s;
+}
+input[type=submit]:hover {
+	background-color: #6f0d0d;
+	width: 50%;
+}
+input[list=players] {
+	margin: 5px;
+	padding: 5px 10px;
+	font-weight: bold;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	font-size: 14px;
+}
+input[type=checkbox] {
+	margin: 5px;
+	padding: 5px;
+}
+#footer {
+width: 960px;
+height: 120px;
+border: 1px solid black;
+margin: 10px 0px 10px 0px;
+border-radius: 5px;
+background-color: #e60106;
+padding: 15px;
+}
