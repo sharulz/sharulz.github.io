@@ -1,55 +1,81 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Form</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-	<div>
-		<form>
-			<h1>Sign Up</h1>
-			<h3>It's free and always will be</h3>
-			<input type="text" id="fname" name="firstname" placeholder="First name">
-			<input type="text" id="lname" name="lastname" placeholder="Last name">
-			<input type="mailmobile" id="mailmobile" name="mailormobile" placeholder="Re-enter email or mobile number">
-			</br>
-			<input type="pwd" id="pwd" name="password" placeholder="New password">
-			</br>
-			<h3>Birthday</h3>
-			<select id="Month" name="Month">
-			<option value="Month">Month</option>
-      		<option value="January">January</option>
-      		<option value="February">February</option>
-      		<option value="March">March</option>
-      		<option value="April">April</option>
-      		<option value="May">May</option>
-      		<option value="June">June</option>
-      		<option value="July">July</option>
-      		<option value="August">August</option>
-      		<option value="September">September</option>
-      		<option value="October">October</option>
-      		<option value="March">March</option>
-      		<option value="March">March</option>
-    		</select>
-    		<select id="Day" name="Day">
-    		<option value="Day">Day</option>
-			<option value="01">01</option>
-      		<option value="02">02</option>
-      		<option value="03">03</option>
-      		</select>
-      		<select id="Year" name="Year">
-    		<option value="Year">Year</option>
-			<option value="1979">1979</option>
-      		<option value="1980">1980</option>
-      		<option value="1981">1981</option>
-      		</select>
-      		<p>Why do I need to provide my birthday?</p>
-      		<input type="radio" name="gender" value="female">Female
-      		<input type="radio" name="gender" value="male">Male
-      		<p>By clicking Sign Up, you agree to our <span style="color:blue">Terms</span> and that you have read our <span style="color:blue">Data Policy</span>, including our <span style="color:blue">Cookie Use</span>.</p>
-      		<input type="submit" value="Submit">
-		</form>
+* {
+	margin: 0;
+	font-family: Helvetica;
+}
+div {
+	border-radius: 5px;
+	background-color: #DEF1F1;
+	width: 38%;
+	height: auto;
+	padding: 12px 50px 15px 30px;
+}
+h1 {
+    margin-bottom: 8px;
+}
+h3 {
+    margin-bottom: 3px; 
+}
+input[type=text] {
+	width: 49.4%;
+	padding: 12px 20px;
+    margin-bottom: 7px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=mailmobile] {
+	width: 100%;
+	padding: 12px 20px;
+    margin-bottom: 7px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=pwd] {
+	width: 100%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+select[id=Month] {
+	width: 16%;
+    padding: 5px;
+    display: inline-block;
+}
+select[id=Day] {
+    width: 13%;
+    padding: 5px;
+    display: inline-block;
+    margin-left: -4px;
+}
+select[id=Year] {
+    width: 13%;
+    padding: 5px;
+    display: inline-block;
+    margin-left: -4px;
+}
 
-	</div>
-</body>
-</html>
+input[type=submit] {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+div div {
+    display: inline-block;
+    font-size: 12px;
+    width: 40%;
+    padding: 0px;
+}
