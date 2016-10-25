@@ -11,7 +11,7 @@ div {
 }
 #header {
 	display: inline-block;
-	width: 960px;
+	width: 1000px;
 	height: 120px;
 	border: 1px solid black;
 	margin: 60px auto auto;
@@ -30,11 +30,7 @@ div {
     animation-iteration-count: infinite;
 }
 @keyframes animate {
-    0%   {left:0px; top:-35px;}
-    25%  {left:30px; top:-50px;}
-    50%  {left:60px; top:-35px;}
-    75%  {left:30px; top:0px;}
-    100% {left:0px; top:-35px;}
+    100% {transform: rotateY(360deg);}
 }
 #header div {
 	display: inline-block;
@@ -66,7 +62,7 @@ a:visited {
 	height: 1000px;
 	border: 1px solid black;
 	border-radius: 5px;
-	margin: 10px 5px 0px 0px;
+	margin-top: 10px;
 	background-color: #e60106;
 	vertical-align: top;
 }
@@ -94,7 +90,7 @@ a:visited {
 }
 #main {
 	display: inline-block;
-	width: 710px;
+	width: 750px;
 	height: 1000px;
 	border: 1px solid black;
 	margin: 10px 0px 0px 5px;
@@ -103,10 +99,27 @@ a:visited {
 	color:#fff;
 	padding: 5px;
 }
+#main img {
+	position:absolute;
+  	-webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#main img.top:hover {
+  opacity:0;
+}
+#main #texts {
+	margin-top: 350px;
+	background-color: #e60106;
+	color:#fff;
+	padding: 5px;
+}
 #columns {
-	width: 960px;
+	width: 1000px;
 	column-count: 3;
-	margin: 5px;
+	margin-top: 5px;
 	padding: 5px;
 	border-radius: 5px;
 	background-color: #e60106;
@@ -118,7 +131,7 @@ a:visited {
 }
 #hidden {
 	display: inline-block;
-	width: 960px;
+	width: 1000px;
 	height: 270px;
 	margin: 10px auto;
 	text-align: center;
@@ -126,7 +139,19 @@ a:visited {
 #hidden p {
 	color: #fff;
 }
-#hidden .box {
+#hidden #box1 {
+	display: inline-block;
+	width: 220px;
+	height: 230px;
+	margin: 8px;
+	border-radius: 5px;
+	background-color: #e60106;
+	text-align: center;
+	vertical-align: top;
+	position: relative;
+	transition: 1s;
+}
+#hidden #box2 {
 	display: inline-block;
 	width: 220px;
 	height: 230px;
@@ -137,18 +162,49 @@ a:visited {
 	position: relative;
 	transition: 1s;
 }
-#hidden .box:hover {
-	transform: rotate(10deg);
+#hidden #box3 {
+	display: inline-block;
+	width: 220px;
+	height: 230px;
+	margin: 8px;
+	border-radius: 5px;
+	background-color: #e60106;
+	text-align: center;
+	position: relative;
+	transition: 1s;
 }
-#hidden .box .number {
+#hidden #box4 {
+	display: inline-block;
+	width: 220px;
+	height: 230px;
+	margin: 8px;
+	border-radius: 5px;
+	background-color: #e60106;
+	text-align: center;
+	position: relative;
+	transition: 1s;
+}
+#hidden #box1:hover {
+	transform: rotate(8deg);
+}
+#hidden #box2:hover {
+	transform: rotate(8deg);
+}
+#hidden #box3:hover {
+	transform: rotate(8deg);
+}
+#hidden #box4:hover {
+	transform: rotate(8deg);
+}
+.number {
 	position: absolute;
 	top: -10px;
 	right: -10px;
 }
-#hidden .box .number img {
+.number img {
 	border-radius: 100%;
 }
-#hidden .box .logo {
+.logo {
 	position: absolute;
 	bottom: -9px;
 	left: -8px;
@@ -157,8 +213,8 @@ a:visited {
 	text-align: center;
 	color: #fff;
 	text-shadow: 2px 2px 4px #000000;
-	width: 960px;
-	margin: 5px;
+	width: 1000px;
+	margin-top: 10px;
 	padding: 5px;
 	background-image: url("http://www.arsenal.com/assets/_files/scaled/1000x688/may_14/zp_Celebrations001_6978.jpg");
 	background-size: 960px;
@@ -204,12 +260,13 @@ a:visited {
 	color: #000;
 }
 #forms {
-display: inline-block;
-width: 960px;
-height: 420px;
-margin: 15px auto;
-position: relative;
-text-align: center;
+	display: inline-block;
+	width: 1000px;
+	height: 420px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	position: relative;
+	text-align: center;
 }
 input[type=text], textarea {
 	margin: 5px;
@@ -267,10 +324,10 @@ input[type=checkbox] {
 	padding: 5px;
 }
 #footer {
-width: 960px;
+width: 1000px;
 height: 120px;
 border: 1px solid black;
-margin: 10px 0px 10px 0px;
+margin-top: 10px;
 border-radius: 5px;
 background-color: #e60106;
 padding: 15px;
