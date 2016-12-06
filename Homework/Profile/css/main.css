@@ -1,0 +1,136 @@
+body {
+	font-family: 'Proza Libre', sans-serif;
+}
+hr {
+	width: 50px;
+	height: 5px;
+	border-top: 2px solid #4d7dba;
+}
+#home {
+	background: url("http://wallpapersonthe.net/wallpapers/l/chicago_skyline_sky_blue_simple-20503.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 450px;
+}
+#home .container{
+	padding: 65px;
+}
+#about {
+	background: url("http://cdn.wallpapersafari.com/54/89/NBAazF.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	padding: 40px;
+}
+#about h4 {
+	font-size: 24px;
+	color: #4d7dba;
+}
+#about p {
+	width: 400px;
+	margin: auto;
+}
+#service{
+	padding-bottom: 50px;
+}
+#service .service-header {
+	padding: 20px;
+	color: #4d7dba;
+}
+#service .service-header h4 {
+	font-size: 24px;
+	color: #4d7dba;
+}
+#service .col-md-3 {
+	padding: 0;
+}
+#service .thumb-service {
+	height: 270px;
+	max-width: 390px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0 auto;
+	border: 2px solid #000;
+}
+#service img {
+	height: 100%;
+	width: 100%;
+}
+#service .service-header i {
+font-size: 25px;
+}
+#service .service-overlay {
+	padding: 100px 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #4d7dba;
+	opacity: 0;
+	color: #fff;
+}
+#service .service-overlay:hover {
+	opacity: 0.7;
+}
+#service .service-overlay h3 {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	padding: 5px 5px;
+	display: inline-block;
+}
+#service .service-overlay i {
+	font-size: 25px;
+	display: inline-block;
+}
+#contact .container-fluid {
+	background: url("http://www.global-techforce.com/wp-content/uploads/2015/07/Contact-Page-Blurred-Phone2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#contact .contact-header {
+	padding-bottom: 20px;
+}
+#contact .contact-header h4 {
+	font-size: 24px;
+	color: #4d7dba;
+}
+#contact .contact-header i {
+	font-size: 25px;
+	color: #4d7dba;
+}
+#contact .contact-left {
+	padding: 130px 20px;
+}
+#contact .btn {
+	margin-top: 10px;
+}
+#contact {
+	padding-bottom: 50px;
+}
+#contact .contact-right {
+	color: #4d7dba;
+}
+#footer {
+	background: url("http://increasevisibility.com/wp-content/themes/bigstream/images/footer-bottom.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	height: 250px;
+}
+#footer img {
+	position: absolute;
+	top: -60px;
+	left: 159px;
+	height: 200px;
+}
+#footer i {
+	font-size: 40px;
+	color: #4d7dba;
+	float: right;
+	padding: 20px;
+}
