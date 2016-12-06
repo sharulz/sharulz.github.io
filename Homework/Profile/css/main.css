@@ -16,6 +16,13 @@ hr {
 #home .container{
 	padding: 65px;
 }
+#portfolio {
+	height: 200px;
+}
+#portfolio h4 {
+	font-size: 24px;
+	color: #4d7dba;
+}
 #about {
 	background: url("http://cdn.wallpapersafari.com/54/89/NBAazF.png");
 	background-repeat: no-repeat;
